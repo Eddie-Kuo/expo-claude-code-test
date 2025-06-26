@@ -53,6 +53,16 @@ function RootLayout() {
         }}
       />
       <Tabs.Screen
+        name="add"
+        options={{
+          title: 'Add',
+          headerTitle: 'Add Movie/Show',
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="add-circle" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="library"
         options={{
           title: 'Library',
